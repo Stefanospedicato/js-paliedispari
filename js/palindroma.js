@@ -26,7 +26,7 @@ function isPalindroma (parola){
     }
 }
 
-//Richiamo la funziona e stampo
+//Richiamo la funzione e stampo
 if (isPalindroma(parola)){
   console.log('La parola è palindroma')
 } else{
