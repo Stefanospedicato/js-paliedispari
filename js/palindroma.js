@@ -11,7 +11,7 @@ const parola = prompt('Inserisci una parola')
 function isPalindroma (parola){
 
   //creo una stringa vuota da popolare
-    let parolaGirata = '';
+  let parolaGirata = '';
 
   //Inverto la parola
   for(let i= parola.length -1; i>=0 ; i--){
@@ -19,11 +19,12 @@ function isPalindroma (parola){
   }
 
   //creo le condizioni dopo il paragone
-    if (parola === parolaGirata) {
+    /*if (parola.toLowerCase() === parolaGirata.toLowerCase()) {
     return true
     } else{ 
       return false
-    }
+    */
+    return parola.toLowerCase() === parolaGirata.toLowerCase()
 }
 
 //Richiamo la funzione e stampo
